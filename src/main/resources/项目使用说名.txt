@@ -1,0 +1,19 @@
+1.访问监控地址：  http://localhost:8888/actuator，其中端口号是根据spring.profiles.active=prod来确定的
+
+
+
+
+
+
+
+
+
+
+
+1.將項目打包：  maven>>clean>>install
+2.使用命令行模式啟動項目
+      進入項目所在的目錄，在地址欄直接輸入：cmd
+      在命令窗口中輸入以下三條命令
+      java -jar service-provider-0.0.1-SNAPSHOT.jar --spring.profiles.active=test
+      java -jar service-provider-0.0.1-SNAPSHOT.jar  --spring.profiles.active=prod
+      java -jar service-provider-0.0.1-SNAPSHOT.jar  --spring.profiles.active=dev
